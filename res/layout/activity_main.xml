@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.helloword.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    >
+    实际开发中默认布局为相对布局，比较常用线性布局
+    ConstraintLayout(约束布局)的出现是为了在Android应用布局中保持扁平的层次结构，减少布局的嵌套，为应用创建响应快速而灵敏的界面。ConstraintLayout可以替代其他布局。
+    textview：文本最大长度 maxLength
+    文本以密码形式显示 password
+    以电话号码的形式输入 phoneNumber
+    没有输入内容显示的提示文本hint
+    在超出文本视图宽度的情况下是否出现横拉条scrollHorizontally
+    设置首字母大写capitalize
+    输入类型inputType
+    editable设置是否可编辑
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLength="10"
+        android:password="true"
+        android:text="hello Word!"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:inputType="phone"
+        android:capitalize="characters"
+        android:hint="名字"
+        android:textColor="#000000"
+        android:editable="true"
+        android:password="true"
+        android:phoneNumber="true"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+         />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="41dp"
+        android:text="你叫什么名字？" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="click"
+        android:text="按钮17"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="按钮18" />
+
+</RelativeLayout>

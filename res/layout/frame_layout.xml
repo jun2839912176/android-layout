@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@android:drawable/btn_star_big_on"
+    android:foregroundGravity="left">
+foreground为设置前景图片
+帧布局图片文件在最上层，按钮9覆盖在按钮8上面，以后也都是层层覆盖
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:text="按钮8" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:text="按钮9" />
+
+</FrameLayout>

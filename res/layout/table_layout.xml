@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    android:shrinkColumns="2"
+    android:collapseColumns="1">
+    <TableRow>
+        拉伸列的第三个按钮 stretch
+        收缩列的第三个按钮 shrink
+        隐藏第二个按钮 collapse
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="按钮10"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮11"
+        />
+
+
+</TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="按钮12" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按钮13" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按钮14" />
+
+    </TableRow>
+
+
+</TableLayout>
